@@ -1,6 +1,6 @@
 # Security Policy
 
-This policy covers **MCP Server Lite** (`mcpserverlite`), developed and maintained by Omnicom, s.r.o. ("Omnicom") and licensed under GPL-3.0-or-later.
+This policy covers **MCP Server Lite** (`mcpserverlite`), developed and maintained by OMNICOM s.r.o. ("OMNICOM") and licensed under GPL-3.0-or-later.
 
 MCP Server Lite is published in this public repository, https://github.com/OMNICOM-Digital/mcpserver-lite, together with its changelog, security advisories and security releases. The full plugin, MCP Server for GLPI, has its own policy: https://github.com/OMNICOM-Digital/mcpserver/blob/main/SECURITY.md
 

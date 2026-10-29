@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png" width="120" alt="Omnicom, s.r.o." />
+  <img src="https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-icon.png" width="120" alt="OMNICOM s.r.o." />
 </p>
 
 <h1 align="center">MCP Server Lite for GLPI</h1>
@@ -14,7 +14,7 @@
 
 A GLPI plugin that exposes GLPI as an [MCP](https://modelcontextprotocol.io) (Model Context Protocol) server, so AI assistants can work with GLPI conversationally.
 
-Built and maintained by [Omnicom, s.r.o.](https://omnicom.digital), an ITSM/ESM consultancy.
+Built and maintained by [OMNICOM s.r.o.](https://omnicom.digital), an ITSM/ESM consultancy.
 
 ## Status
 
