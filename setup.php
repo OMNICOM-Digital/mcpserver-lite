@@ -70,7 +70,7 @@ function plugin_version_mcpserverlite()
     return [
         'name'         => 'MCP Server Lite',
         'version'      => PLUGIN_MCPSERVERLITE_VERSION,
-        'author'       => 'OMNICOM Digital',
+        'author'       => 'OMNICOM s.r.o.',
         'license'      => 'GPLv3+',
         'homepage'     => 'https://omnicom.digital',
         'requirements' => [
