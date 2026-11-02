@@ -10,9 +10,9 @@ Security support is defined per **release line**, not per individual release. Al
 
 | Line | GLPI | First published | Security support until |
 |---|---|---|---|
-| 1.x | 11.0 to 11.9 | not released yet | **five years from the first release**\* |
+| 1.x | 11.0.11 to 11.9 | 2 November 2026 (1.1.0) | **2 November 2031**\* |
 
-\* The exact date is added here with the first release. It is extended whenever a new release is published in the line, so that every release in the line is supported for at least five years from its own release date.
+\* Five years from the latest release in the line (1.1.0, published on GitHub Releases on 2 November 2026). The date is extended whenever a new release is published in the line, so that every release in the line is supported for at least five years from its own release date.
 
 Feature releases within a line (for example, new MCP tools that fit the existing permission model) do not start a new support period. A new line (for example 2.0) is created only when the security model, authentication or intended use changes substantially, and it receives its own support period announced in advance.
 
@@ -81,4 +81,4 @@ We will not pursue legal action against researchers who act in good faith, avoid
 
 ---
 
-*Last updated: 28 October 2026. Contact: security@omnicom.digital*
+*Last updated: 2 November 2026. Contact: security@omnicom.digital*
