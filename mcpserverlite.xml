@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+  <name>MCP Server Lite</name>
+  <key>mcpserverlite</key>
+  <state>stable</state>
+  <logo>https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver/main/oc-logo-40.png</logo>
+  <description>
+    <short>
+      <en>Free, read-only edition of the MCP Server plugin. Exposes GLPI as an MCP (Model Context Protocol) server so AI assistants like Claude and Microsoft Copilot can look up tickets, the knowledge base, service catalog forms, projects, users, groups and entities conversationally, without changing any data.</en>
+    </short>
+    <long>
+      <en>
+**MCP Server Lite** connects GLPI to AI assistants over the Model Context Protocol (MCP), read-only. It is the free edition of the MCP Server plugin by OMNICOM s.r.o.
+
+### Capabilities
+- 33 read-only tools: tickets and ITIL categories, knowledge base, service catalog forms, projects, users, groups, entities and session context
+- Ticket review helpers for type and category; advisory only, any change is made in GLPI
+- Self-Service profiles see only the tools that fit them
+
+### Read-only by construction
+- No write tools, no database tables, no GLPI right, no admin page
+- Every call runs as the GLPI user who signed in through GLPI's own OAuth server, so normal profile and entity rights apply
+- Runs natively inside GLPI, no external proxy; can run side by side with the full MCP Server plugin
+
+### Requirements
+Supports on-premise GLPI 11.0.11 to 11.9.99 and PHP 8.1 or later.
+
+### Security updates
+Security fixes are free and published as security releases with an advisory: [GitHub Releases](https://github.com/OMNICOM-Digital/mcpserver-lite/releases) and [Security Advisories](https://github.com/OMNICOM-Digital/mcpserver-lite/security/advisories). The 1.x line is supported until at least 2031-11-02. Security policy and how to report a vulnerability: [SECURITY.md](https://github.com/OMNICOM-Digital/mcpserver-lite/blob/main/SECURITY.md).
+
+### Need write access?
+The full [MCP Server](https://github.com/OMNICOM-Digital/mcpserver) plugin adds write tools with a human-in-the-loop write confirmation, a language check and support.
+      </en>
+    </long>
+  </description>
+  <homepage>https://github.com/OMNICOM-Digital/mcpserver-lite</homepage>
+  <download>https://github.com/OMNICOM-Digital/mcpserver-lite/releases</download>
+  <issues>https://github.com/OMNICOM-Digital/mcpserver-lite/issues</issues>
+  <readme>https://raw.githubusercontent.com/OMNICOM-Digital/mcpserver-lite/main/README.md</readme>
+  <authors>
+    <author>OMNICOM s.r.o.</author>
+  </authors>
+  <versions>
+    <version>
+      <num>1.1.0</num>
+      <compatibility>~11.0</compatibility>
+      <download_url>https://github.com/OMNICOM-Digital/mcpserver-lite/releases/download/1.1.0/mcpserverlite-1.1.0.zip</download_url>
+    </version>
+  </versions>
+  <langs>
+    <lang>en_GB</lang>
+  </langs>
+  <license><![CDATA[GPL v3+]]></license>
+  <tags>
+    <en>
+      <tag>AI</tag>
+      <tag>Integration</tag>
+      <tag>Helpdesk</tag>
+      <tag>Read-only</tag>
+    </en>
+  </tags>
+</root>
