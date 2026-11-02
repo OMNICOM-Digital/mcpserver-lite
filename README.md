@@ -5,7 +5,7 @@
 <h1 align="center">MCP Server Lite for GLPI</h1>
 
 <p align="center">
-  <a href="https://github.com/OMNICOM-Digital/mcpserver-lite/releases/latest"><img src="https://img.shields.io/github/v/release/OMNICOM-Digital/mcpserver-lite?label=release&color=13A688" alt="Latest release" /></a>
+  <a href="https://github.com/OMNICOM-Digital/mcpserver-lite/releases/latest"><img src="https://img.shields.io/badge/release-1.1.0-13A688" alt="Release 1.1.0" /></a>
   <img src="https://img.shields.io/badge/license-GPLv3-13A688" alt="GPLv3 license" />
   <img src="https://img.shields.io/badge/GLPI-11.0.11--11.9-13A688" alt="GLPI 11.0.11-11.9" />
 </p>
