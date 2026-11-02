@@ -11,6 +11,11 @@ Release history of MCP Server Lite. Releases are published under [Releases](http
 - **Tags** are the plain version number without a prefix (for example `1.1.0`), matching the version in `setup.php`.
 - Entries prefixed **Security:** fix a vulnerability or close a security gap.
 
+## Unreleased
+
+- Plugin source code published in this repository
+- Author shown in Setup > Plugins is now OMNICOM s.r.o.
+
 ## 1.1.0
 
 First public release, published 2026-11-02. Supported with security fixes until 2031-11-02.
