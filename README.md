@@ -38,7 +38,11 @@ For the full toolset, the human-in-the-loop write confirmation and support, see 
 3. In your AI client, add a custom connector with the URL `https://<your-glpi>/plugins/mcpserverlite/front/mcp.php`, the client ID and secret from step 2, and the Streamable HTTP transport.
 4. Each person signs in to GLPI in their own browser on first connection and gets their own token and their own rights.
 
-After an update that adds or removes tools, disconnect and reconnect the connector in the AI client. Full setup notes are in the README inside the package.
+After an update that adds or removes tools, disconnect and reconnect the connector in the AI client. Full setup notes and the architecture: [docs/technical-overview.md](docs/technical-overview.md).
+
+## Source code
+
+The plugin source is in this repository (`setup.php`, `src/`, `front/`); it is the folder GLPI expects as `<glpi>/plugins/mcpserverlite`. `main` can contain changes that are not released yet, so for installation use the zip from [Releases](https://github.com/OMNICOM-Digital/mcpserver-lite/releases/latest). Issues and pull requests are welcome; for security problems follow [SECURITY.md](SECURITY.md).
 
 ## Compatibility
 
