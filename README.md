@@ -62,4 +62,4 @@ GPL v3.0 or later, see [LICENSE](LICENSE).
 
 ## Get in touch
 
-MCP Server Lite comes without a support SLA. Questions about MCP Server Lite or the full plugin: sales@omnicom.sk or [omnicom.digital](https://omnicom.digital).
+MCP Server Lite comes without a support SLA. Questions about MCP Server Lite or the full plugin: sales@omnicom.digital or [omnicom.digital](https://omnicom.digital).
