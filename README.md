@@ -18,7 +18,7 @@ Built and maintained by [OMNICOM s.r.o.](https://omnicom.digital), an ITSM/ESM c
 
 ## Download
 
-Download the latest `mcpserverlite-<version>.zip` from [Releases](https://github.com/OMNICOM-Digital/mcpserver-lite/releases/latest), free for everyone. Each release lists SHA-256 checksums in `SHA256SUMS`.
+Install MCP Server Lite from the GLPI Marketplace (**Setup > Plugins > Marketplace**), or download the latest `mcpserverlite-<version>.zip` from [Releases](https://github.com/OMNICOM-Digital/mcpserver-lite/releases/latest). Both are free for everyone. Each release lists SHA-256 checksums in `SHA256SUMS`.
 
 For the full toolset, the human-in-the-loop write confirmation and support, see [MCP Server for GLPI](https://github.com/OMNICOM-Digital/mcpserver).
 
@@ -33,12 +33,19 @@ For the full toolset, the human-in-the-loop write confirmation and support, see 
 
 ## Installation
 
-1. Extract the zip into `<glpi>/plugins/` (the folder must be named `mcpserverlite`), then install and activate the plugin in **Setup > Plugins**. It creates nothing in the database.
-2. In **Setup > General > OAuth clients**, add a client with the redirect URI your AI client requires (for Claude: `https://claude.ai/api/mcp/auth_callback`), all grant types enabled and at least the `api` scope.
-3. In your AI client, add a custom connector with the URL `https://<your-glpi>/plugins/mcpserverlite/front/mcp.php`, the client ID and secret from step 2, and the Streamable HTTP transport.
+1. **Recommended:** in GLPI, go to **Setup > Plugins > Marketplace**, tab **Discover**, search for `MCP Server Lite`, then click **Download**, **Install** and **Enable**. Self-hosted GLPI needs a GLPI Network registration key (**Setup > General > GLPI Network**) to use the Marketplace.
+   **Manual:** extract the zip from [Releases](https://github.com/OMNICOM-Digital/mcpserver-lite/releases/latest) into `<glpi>/plugins/` (the folder must be named `mcpserverlite`), then install and activate the plugin in **Setup > Plugins**.
+   Either way, the plugin creates nothing in the database.
+2. In **Setup > General > OAuth clients**, add a client with the redirect URI your AI client requires, all grant types enabled (including `client_credentials`) and at least the `api` scope. Copy the client ID and the client secret; GLPI OAuth clients are always confidential, so the secret is required. Redirect URIs: Claude `https://claude.ai/api/mcp/auth_callback`, Copilot Studio the callback URL it shows when you create the tool (see the [Copilot Studio guide](docs/connect-copilot-studio.md)).
+3. In your AI client, add a custom connector with the URL `https://<your-glpi>/plugins/mcpserverlite/front/mcp.php`, the client ID and secret from step 2, and the Streamable HTTP transport. Step-by-step: [Claude](docs/connect-claude.md), [Microsoft Copilot Studio](docs/connect-copilot-studio.md).
 4. Each person signs in to GLPI in their own browser on first connection and gets their own token and their own rights.
 
 After an update that adds or removes tools, disconnect and reconnect the connector in the AI client. Full setup notes and the architecture: [docs/technical-overview.md](docs/technical-overview.md).
+
+### Connect your AI client
+
+- [Claude](docs/connect-claude.md)
+- [Microsoft Copilot Studio](docs/connect-copilot-studio.md)
 
 ## Source code
 

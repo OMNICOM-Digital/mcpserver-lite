@@ -15,6 +15,8 @@ Release history of MCP Server Lite. Releases are published under [Releases](http
 
 - Plugin source code published in this repository
 - Author shown in Setup > Plugins is now OMNICOM s.r.o.
+- Documentation: step-by-step connection guides with screenshots for [Claude](docs/connect-claude.md) and [Microsoft Copilot Studio](docs/connect-copilot-studio.md), linked from the README
+- Documentation: README installation now recommends the GLPI Marketplace, with the manual zip install as an alternative
 
 ## 1.1.0
 
