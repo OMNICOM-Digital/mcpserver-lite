@@ -33,8 +33,10 @@ For the full toolset, the human-in-the-loop write confirmation and support, see 
 
 ## Installation
 
-1. **Recommended:** in GLPI, go to **Setup > Plugins > Marketplace**, tab **Discover**, search for `MCP Server Lite`, then click **Download**, **Install** and **Enable**. Self-hosted GLPI needs a GLPI Network registration key (**Setup > General > GLPI Network**) to use the Marketplace.
-   **Manual:** extract the zip from [Releases](https://github.com/OMNICOM-Digital/mcpserver-lite/releases/latest) into `<glpi>/plugins/` (the folder must be named `mcpserverlite`), then install and activate the plugin in **Setup > Plugins**.
+1. Install the plugin:
+   - **Recommended:** in GLPI, go to **Setup > Plugins > Marketplace**, tab **Discover**, search for `MCP Server Lite`, then click **Download**, **Install** and **Enable**. Self-hosted GLPI needs a GLPI Network registration key (**Setup > General > GLPI Network**) to use the Marketplace.
+   - **Manual:** extract the zip from [Releases](https://github.com/OMNICOM-Digital/mcpserver-lite/releases/latest) into `<glpi>/plugins/` (the folder must be named `mcpserverlite`), then install and activate the plugin in **Setup > Plugins**.
+
    Either way, the plugin creates nothing in the database.
 2. In **Setup > General > OAuth clients**, add a client with the redirect URI your AI client requires, all grant types enabled (including `client_credentials`) and at least the `api` scope. Copy the client ID and the client secret; GLPI OAuth clients are always confidential, so the secret is required. Redirect URIs: Claude `https://claude.ai/api/mcp/auth_callback`, Copilot Studio the callback URL it shows when you create the tool (see the [Copilot Studio guide](docs/connect-copilot-studio.md)).
 3. In your AI client, add a custom connector with the URL `https://<your-glpi>/plugins/mcpserverlite/front/mcp.php`, the client ID and secret from step 2, and the Streamable HTTP transport. Step-by-step: [Claude](docs/connect-claude.md), [Microsoft Copilot Studio](docs/connect-copilot-studio.md).
