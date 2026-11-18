@@ -67,4 +67,4 @@ Each user signs in with their own GLPI account and sees only what their GLPI rig
 
 ---
 
-*This guide covers MCP Server Lite 1.1.0 on GLPI 11.0.11 to 11.9.x. Architecture and full setup notes: [technical-overview.md](technical-overview.md). Other AI clients: [Connect Claude](connect-claude.md).*
+*This guide covers MCP Server Lite 1.1.0 on GLPI 11.0.11 to 11.9.x. Architecture and full setup notes: [technical-overview.md](technical-overview.md). Other AI clients: [Connect Claude](connect-claude.md). Back to the [README](../README.md).*
